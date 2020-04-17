@@ -7,8 +7,8 @@ public class Contenido {
     public String nombre;
     public String descripcion; 
     public Double calificacion; 
+    public Genero genero;
     public Clasificacion clasificacion;
-    public String genero;
     public int anio;
     
     public List <Actor> elenco = new ArrayList<>(); 
