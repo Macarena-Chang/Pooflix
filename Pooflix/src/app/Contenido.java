@@ -12,4 +12,6 @@ public class Contenido {
     public int anio;
     
     public List <Actor> elenco = new ArrayList<>(); 
+
+    
 }
