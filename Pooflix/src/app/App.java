@@ -13,10 +13,10 @@ public class App {
 
         miPooflix.buscarSerie("Friends");
 
-        Temporada laMejorTemporada = fr.getTemporada(1);    
+        Temporada laMejorTemporada = fr.getTemporada(2);    
 
        Episodio elTop;
-       elTop = laMejorTemporada.getEpisodio(2);
+       elTop = laMejorTemporada.getEpisodio(1);
 
        elTop.reproducir();
 
