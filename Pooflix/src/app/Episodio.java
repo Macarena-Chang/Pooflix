@@ -11,7 +11,7 @@ public class Episodio {
    
 
     public void reproducir(){
-        System.out.println("Reproduciendo episodio " + this.numero + " " + this.nombre );
+        System.out.println("Reproduciendo episodio " + this.numero + " " + this.nombre);
     }
 
 }
