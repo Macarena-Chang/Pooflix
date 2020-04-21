@@ -138,23 +138,12 @@ public class Pooflix {
         mockumentary.descripcion = "A mockumentary or docucomedy is a type of movie or television show depicting fictional events but presented as a documentary";
          // CLASIFICACION
          Clasificacion masDe13 = new Clasificacion();
-         masDe13.tipo = "Para mayores de 13 años";
+         masDe13.tipo = "PG";
          masDe13.edadMin = 13;
-         masDe13.descripcion = "Contiene.......";
-
-
-
-          
+         masDe13.descripcion = "Parental guidance suggested – Some material may not be suitable for pre-teenagers.";
+                 
 
         // serie 2 THE OFFICE
-        // CAST THE OFFICE
-        Actor steveCarrel = new Actor();
-        steveCarrel.nombre = "Steve Carell";
-        steveCarrel.edad = 57;
-
-        Actor jennaFischer = new Actor();
-        jennaFischer.nombre = "Jenna Fischer";
-        jennaFischer.edad = 46;
         Serie serie2 = new Serie();
         serie2.nombre = "The Office";
         serie2.descripcion = "The Office is an American mockumentary sitcom television series that depicts the everyday lives of office employees in the Scranton, Pennsylvania";
@@ -162,83 +151,73 @@ public class Pooflix {
         serie2.genero = mockumentary;
         serie2.clasificacion = masDe13;
         serie2.anio = 2005;
-        serie2.elenco.add(steveCarrel);
-        serie2.elenco.add(jennaFischer);
-        this.series.add(serie2);
+        this.series.add(serie2); 
 
-        // serie 2 THE OFFICE TEMPORADAS
-        Temporada serie2T1 = new Temporada();
-        serie2T1.numero = 1;
-        serie2.temporadas.add(serie2T1);
 
-        Temporada serie2T2 = new Temporada();
-        serie2T2.numero = 2;
-        serie2.temporadas.add(serie2T2);
 
-        // Serie 2 EPISODIOS THE OFFICE TEMPORADA 1
+        // CAST THE OFFICE
+        Actor actorTheOffice = new Actor();
+        actorTheOffice.nombre = "Steve Carell";
+        actorTheOffice.edad = 57;
+        serie2.elenco.add(actorTheOffice);
 
-        Episodio serie2T1E1 = new Episodio();
-        serie2T1E1.nombre = "Pilot";
-        serie2T1E1.numero = 1;
-        serie2T1E1.descripcion = "Michael Scott, the regional manager at the Scranton branch of Dunder Mifflin, a distribution company dealing in paper products that is currently under threat of facing downsizing.";
-        serie2T1E1.duracionEnMinutos = 22;
-        serie2T1.episodios.add(serie2T1E1);
+        actorTheOffice = new Actor();
+        actorTheOffice.nombre = "Jenna Fischer";
+        actorTheOffice.edad = 46;
+        serie2.elenco.add(actorTheOffice);
+        //
+        // serie 2 THE OFFICE TEMPORADA 1 
+        //
+        Temporada temporadaTheOffice = new Temporada();
+        temporadaTheOffice.numero = 1;
+        serie2.temporadas.add(temporadaTheOffice);
 
-        Episodio serie2T1E2 = new Episodio();
-        serie2T1E2.nombre = "Diversity Day";
-        serie2T1E2.descripcion = "The staff to undergo a racial diversity seminar.";
-        serie2T1E2.duracionEnMinutos = 26;
-        serie2T1E2.numero = 2;
-        serie2T1.episodios.add(serie2T1E2);
+        Episodio episodioTheOffice = new Episodio();
+        episodioTheOffice.nombre = "Pilot";
+        episodioTheOffice.numero = 1;
+        episodioTheOffice.descripcion = "Michael Scott, the regional manager at the Scranton branch of Dunder Mifflin, a distribution company dealing in paper products that is currently under threat of facing downsizing.";
+        episodioTheOffice.duracionEnMinutos = 22;
+        temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        Episodio serie2T1E3 = new Episodio();
-        serie2T1E3.nombre = "Health Care";
-        serie2T1E3.descripcion = "Jim and Pam organize the Games of the First Dunder Mifflin Olympiad.";
-        serie2T1E3.duracionEnMinutos = 24;
-        serie2T1E3.numero = 3;
-        serie2T1.episodios.add(serie2T1E3);
+        episodioTheOffice = new Episodio();
+        episodioTheOffice.nombre = "Diversity Day";
+        episodioTheOffice.descripcion = "The staff to undergo a racial diversity seminar.";
+        episodioTheOffice.duracionEnMinutos = 26;
+        episodioTheOffice.numero = 2;
+        temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        Episodio serie2T1E4 = new Episodio();
-        serie2T1E4.nombre = "The Alliance";
-        serie2T1E4.numero = 4;
-        serie2T1.episodios.add(serie2T1E4);
+        episodioTheOffice = new Episodio();
+        episodioTheOffice.nombre = "Health Care";
+        episodioTheOffice.descripcion = "Jim and Pam organize the Games of the First Dunder Mifflin Olympiad.";
+        episodioTheOffice.duracionEnMinutos = 24;
+        episodioTheOffice.numero = 3;
+        temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        Episodio serie2T1E5 = new Episodio();
-        serie2T1E5.nombre = "Basketball";
-        serie2T1E5.numero = 5;
-        serie2T1.episodios.add(serie2T1E5);
+        //
+        // serie 2 THE OFFICE TEMPORADA 2 
+        //  
+        temporadaTheOffice = new Temporada();
+        temporadaTheOffice.numero = 2;
+        serie2.temporadas.add(temporadaTheOffice);
 
-        // Serie 2 EPISODIOS THE OFFICE TEMPORADA 2
-        Episodio serie2T2E1 = new Episodio();
-        serie2T2E1.nombre = "The Dundies";
-        serie2T2E1.descripcion = "Se entregan los premios Dundies";
-        serie2T2E1.duracionEnMinutos = 25;
-        serie2T2E1.numero = 1;
-        serie2T2.episodios.add(serie2T2E1);
+        episodioTheOffice = new Episodio();
+        episodioTheOffice.nombre = "The Dundies";
+        episodioTheOffice.descripcion = "Se entregan los premios Dundies";
+        episodioTheOffice.duracionEnMinutos = 25;
+        episodioTheOffice.numero = 1;
+        temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        Episodio serie2T2E2 = new Episodio();
-        serie2T2E2.nombre = "Sexual Harassment";
-        serie2T2E2.numero = 2;
-        serie2T2E2.descripcion = "Todd Packer  offends the staff with crude gossip about an upper management scandal.";
-        serie2T2E2.duracionEnMinutos = 25;
-        serie2T2.episodios.add(serie2T2E2);
+        episodioTheOffice = new Episodio();
+        episodioTheOffice.nombre = "Sexual Harassment";
+        episodioTheOffice.numero = 2;
+        episodioTheOffice.descripcion = "Todd Packer  offends the staff with crude gossip about an upper management scandal.";
+        episodioTheOffice.duracionEnMinutos = 25;
+        temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        Episodio serie2T2E3 = new Episodio();
-        serie2T2E3.nombre = "Office Olympics";
-        serie2T2E3.numero = 3;
-
-        serie2T2.episodios.add(serie2T2E3);
-
-        Episodio serie2T2E4 = new Episodio();
-        serie2T2E4.nombre = "The Fire";
-        serie2T2E4.numero = 4;
-        serie2T2.episodios.add(serie2T2E4);
-
-        Episodio serie2T2E5 = new Episodio();
-        serie2T2E5.nombre = "Halloween";
-        serie2T2E5.numero = 5;
-        serie2T2.episodios.add(serie2T2E5);
-        
-
+        episodioTheOffice = new Episodio();
+        episodioTheOffice.nombre = "Office Olympics";
+        episodioTheOffice.numero = 3;
+        episodioTheOffice.descripcion="Descripcion episodio 3 temp 2 THE OFFICE";
+        temporadaTheOffice.episodios.add(episodioTheOffice);
     }
 }
