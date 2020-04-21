@@ -6,6 +6,7 @@ import java.util.List;
 public class Temporada {
     public int numero;
     public List<Episodio> episodios = new ArrayList<>();
+    public List<Webisode> webisodes = new ArrayList<>(); 
     
 
     public Episodio getEpisodio( int nro){
@@ -21,4 +22,16 @@ public class Temporada {
         }
         return null; 
     }
-}
+
+    public Webisode getWebisode(int nro){
+        for(Webisode epi : this.webisodes){
+            if(epi.numero == nro){
+
+                return epi;
+
+            }
+            
+        } 
+        return null;
+    }
+    }  

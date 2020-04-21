@@ -21,9 +21,7 @@ public class Pooflix {
 
     public void inicializarCatalogo() {
         this.inicializarFriends();
-        this.inicializarTheOffice();
-
-        
+        this.inicializarTheOffice();        
     }
 
     public void inicializarFriends() {
@@ -193,6 +191,16 @@ public class Pooflix {
         episodioTheOffice.numero = 3;
         temporadaTheOffice.episodios.add(episodioTheOffice);
 
+        //AGREGO EL WEBISODE
+        Webisode webisodeTheOffice = new Webisode();
+        webisodeTheOffice.numero=1;
+        webisodeTheOffice.nombre="The Mentor Webisode";
+        webisodeTheOffice.duracionEnMinutos = 8;
+        webisodeTheOffice.descripcion="Angela becomes Erin's mentor in this EXCLUSIVE Webisode";
+        webisodeTheOffice.url="https://www.youtube.com/watch?v=mxHtJfplt1U";
+       temporadaTheOffice.webisodes.add(webisodeTheOffice);
+        
+        
         //
         // serie 2 THE OFFICE TEMPORADA 2 
         //  
@@ -219,5 +227,6 @@ public class Pooflix {
         episodioTheOffice.numero = 3;
         episodioTheOffice.descripcion="Descripcion episodio 3 temp 2 THE OFFICE";
         temporadaTheOffice.episodios.add(episodioTheOffice);
-    }
+    }    
+
 }

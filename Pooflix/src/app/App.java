@@ -9,7 +9,7 @@ public class App {
         miPooflix.inicializarCatalogo();
         
        
-        Serie fr = miPooflix.buscarSerie("Friends");
+        /*Serie fr = miPooflix.buscarSerie("Friends");
 
         miPooflix.buscarSerie("Friends");
 
@@ -19,18 +19,21 @@ public class App {
        elTop = laMejorTemporada.getEpisodio(1);
 
        elTop.reproducir();
+       */
 
-       /*Reproduciendo episodio de THE OFFICE
+       
 
        Serie office = miPooflix.buscarSerie("The Office");
        miPooflix.buscarSerie("The Office");
 
-       Temporada temporadaElegida = office.getTemporada(2);
-       Episodio episodioElegido = temporadaElegida.getEpisodio(3);
+       Temporada temporadaElegida = office.getTemporada(1);
+       //Episodio episodioElegido = temporadaElegida.getEpisodio(3);
+      // episodioElegido.reproducir();
 
-       episodioElegido.reproducir();
+       Webisode elMejorWebisodio = temporadaElegida.getWebisode(1);
+       elMejorWebisodio.reproducir();
 
-       */
+       
 
 
   
