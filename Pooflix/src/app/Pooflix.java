@@ -33,10 +33,10 @@ public class Pooflix {
         generoSitCom.descripcion = "A sitcom is a genre of comedy centered on a fixed set of characters who carry over from episode to episode.";
         generoSitCom.nombre = "Sitcom";
         // CLASIFICACION
-        Clasificacion masDe13 = new Clasificacion();
-        masDe13.tipo = "Para mayores de 13 años";
-        masDe13.edadMin = 13;
-        masDe13.descripcion = "Contiene.......";
+        Clasificacion allAges = new Clasificacion();
+        allAges.tipo = "G";
+        allAges.edadMin = 0;
+        allAges.descripcion = "All ages admitted.";
 
         // Serie 1 FRIENDS
         Serie serie1 = new Serie();
@@ -44,111 +44,90 @@ public class Pooflix {
         serie1.descripcion = "Rachel Green, a sheltered but friendly woman, flees her wedding day and wealthy yet unfulfilling life, and finds childhood friend Monica Geller...";
         serie1.calificacion = 9.8;
         serie1.genero = generoSitCom;
-        serie1.clasificacion = masDe13;
+        serie1.clasificacion = allAges;
         serie1.anio = 1994;
         this.series.add(serie1);
 
-        // Serie 1 Friends ELENCO
-        Actor courteneyCox = new Actor();
-        courteneyCox.nombre = "Courteney Cox";
-        courteneyCox.edad = 51;
-        serie1.elenco.add(courteneyCox);
+        // Serie 1 Friends ELENCO 
+        Actor actorReusandoVariable = new Actor();
+        actorReusandoVariable.nombre = "Courteney Cox";
+        actorReusandoVariable.edad = 51;
+        serie1.elenco.add(actorReusandoVariable);
 
-        Actor jenniferAniston = new Actor();
-        jenniferAniston.nombre = "Jennifer Aniston";
-        jenniferAniston.edad = 51;
-        serie1.elenco.add(jenniferAniston);
+        actorReusandoVariable = new Actor();
+        actorReusandoVariable.nombre = "Jennifer Aniston";
+        actorReusandoVariable.edad = 51;
+        serie1.elenco.add(actorReusandoVariable);
 
-        Actor matthewPerry = new Actor();
-        matthewPerry.nombre = "Matthew Perry";
-        matthewPerry.edad = 50;
-        serie1.elenco.add(matthewPerry);
+        actorReusandoVariable = new Actor();
+        actorReusandoVariable.nombre = "Matthew Perry";
+        actorReusandoVariable.edad = 50;
+        serie1.elenco.add(actorReusandoVariable);
 
-        Actor mattLeBlanc = new Actor();
-        mattLeBlanc.nombre = "Matt LeBlanc";
-        mattLeBlanc.edad = 52;
-        serie1.elenco.add(mattLeBlanc);
+        actorReusandoVariable = new Actor();
+        actorReusandoVariable.nombre = "Matt LeBlanc";
+        actorReusandoVariable.edad = 52;
+        serie1.elenco.add(actorReusandoVariable);
 
-        Actor lisaKudrow = new Actor();
-        lisaKudrow.nombre = "Lisa Kudrow";
-        lisaKudrow.edad = 56;
-        serie1.elenco.add(lisaKudrow);
+        actorReusandoVariable = new Actor();
+        actorReusandoVariable.nombre = "Lisa Kudrow";
+        actorReusandoVariable.edad = 56;
+        serie1.elenco.add(actorReusandoVariable);
+        //
+        // Serie 1 FRIENDS TEMPORADA 1 
+        //
+        Temporada temporadaReusandoVariable = new Temporada();
+        temporadaReusandoVariable.numero = 1;
+        serie1.temporadas.add(temporadaReusandoVariable);
 
-        // Serie 1 TEMPORADAS FRIENDS
-        Temporada serie1T1 = new Temporada();
-        serie1T1.numero = 1;
-        Temporada serie1T2 = new Temporada();
-        serie1T2.numero = 2;
+        Episodio episodioReusandoVariable = new Episodio();
+        episodioReusandoVariable.nombre = "The pilot";
+        episodioReusandoVariable.numero = 1;
+        episodioReusandoVariable.descripcion = "Rachel Green entra a Central Perk usando un vestido de novia. Rachel les explica que dejó a su prometido en el altar.";
+        episodioReusandoVariable.duracionEnMinutos = 25;
+        temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
+        
+        episodioReusandoVariable = new Episodio();        
+        episodioReusandoVariable.nombre = "The One with the Sonogram at the End";
+        episodioReusandoVariable.numero = 2;
+        episodioReusandoVariable.descripcion = "Ross recibe la noticia de su exesposa Carol de que será padre del niño que espera.";
+        episodioReusandoVariable.duracionEnMinutos = 20;
+        temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
-        serie1.temporadas.add(serie1T1);
-        serie1.temporadas.add(serie1T2);
+        episodioReusandoVariable = new Episodio();
+        episodioReusandoVariable.nombre = "The One with the Thumb";
+        episodioReusandoVariable.descripcion = "Lizzy buys a soda for Phoebe, who, upon opening the can, discovers a severed thumb floating in the soda. The soda company gives Phoebe $7,000.";
+        episodioReusandoVariable.duracionEnMinutos = 22;
+        episodioReusandoVariable.numero = 3;
+        temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
-        // Serie 1 EPISODIOS FRIENDS TEMPORADA 1
-        Episodio serie1T1E1 = new Episodio();
-        serie1T1E1.nombre = "The pilot";
-        serie1T1E1.numero = 1;
-        serie1T1E1.descripcion = "Rachel Green entra a Central Perk usando un vestido de novia. Rachel les explica que dejó a su prometido en el altar.";
-        serie1T1E1.duracionEnMinutos = 25;
-        serie1T1.episodios.add(serie1T1E1);
+        //
+        //SERIE 1 FRIENDS TEMPORADA 2
+        //
+        temporadaReusandoVariable = new Temporada();
+        temporadaReusandoVariable.numero = 2;         
+        serie1.temporadas.add( temporadaReusandoVariable);
 
-        Episodio serie1T1E2 = new Episodio();
-        serie1T1E2.nombre = "The One with the Sonogram at the End";
-        serie1T1E2.numero = 2;
-        serie1T1E2.descripcion = "Ross recibe la noticia de su exesposa Carol de que será padre del niño que espera.";
-        serie1T1E2.duracionEnMinutos = 20;
-        serie1T1.episodios.add(serie1T1E2);
+        episodioReusandoVariable = new Episodio();
+        episodioReusandoVariable.nombre = "The One with Ross's New Girlfriend";
+        episodioReusandoVariable.numero = 1;
+        episodioReusandoVariable.descripcion = "Rachel sees Ross arrive with his new girlfriend, paleontologist and former graduate school classmate Julie.";
+        episodioReusandoVariable.duracionEnMinutos = 30;
+        temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
-        Episodio serie1T1E3 = new Episodio();
-        serie1T1E3.nombre = "The One with the Thumb";
-        serie1T1E3.descripcion = "Lizzy buys a soda for Phoebe, who, upon opening the can, discovers a severed thumb floating in the soda. The soda company gives Phoebe $7,000.";
-        serie1T1E3.duracionEnMinutos = 22;
-        serie1T1E3.numero = 3;
-        serie1T1.episodios.add(serie1T1E3);
+        episodioReusandoVariable = new Episodio();
+        episodioReusandoVariable.nombre = "The One with the Breast Milk";
+        episodioReusandoVariable.descripcion = "Descripcion del episodio 2 temporada 2 FRIENDS";
+        episodioReusandoVariable.duracionEnMinutos = 25;
+        episodioReusandoVariable.numero = 2;
+        temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
-        Episodio serie1T1E4 = new Episodio();
-        serie1T1E4.nombre = "The One with George Stephanopoulos";
-        serie1T1E4.numero = 4;
-        serie1T1E4.descripcion = "A pizza delivery guy (Sean Whalen) arrives, although he brings them the wrong pizza; the one he brought was meant for G. Stephanopoulos ";
-        serie1T1E4.duracionEnMinutos = 28;
-        serie1T1.episodios.add(serie1T1E4);
 
-        Episodio serie1T1E5 = new Episodio();
-        serie1T1E5.nombre = "The One with the East German Laundry Detergent";
-        serie1T1E5.numero = 5;
-        serie1T1E3.descripcion = "Descripcion del episodio 5 Temporada 1 de FRIENDS";
-        serie1T1E3.duracionEnMinutos = 20;
-        serie1T1.episodios.add(serie1T1E5);
-
-        // Serie 1 EPISODIOS FRIENDS TEMPORADA 2
-        Episodio serie1T2E1 = new Episodio();
-        serie1T2E1.nombre = "The One with Ross's New Girlfriend";
-        serie1T2E1.numero = 1;
-        serie1T2E1.descripcion = "Rachel sees Ross arrive with his new girlfriend, paleontologist and former graduate school classmate Julie.";
-        serie1T2E1.duracionEnMinutos = 30;
-        serie1T2.episodios.add(serie1T2E1);
-
-        Episodio serie1T2E2 = new Episodio();
-        serie1T2E2.nombre = "The One with the Breast Milk";
-        serie1T2E2.descripcion = "Descripcion del episodio 2 temporada 2 FRIENDS";
-        serie1T2E2.duracionEnMinutos = 25;
-        serie1T2E2.numero = 2;
-        serie1T2.episodios.add(serie1T2E2);
-
-        Episodio serie1T2E3 = new Episodio();
-        serie1T2E3.nombre = "The One Where Heckles Dies";
-        serie1T2E3.numero = 3;
-        serie1T2.episodios.add(serie1T2E3);
-
-        Episodio serie1T2E4 = new Episodio();
-        serie1T2E4.nombre = "The One with Phoebe's Husband";
-        serie1T2E4.numero = 4;
-        serie1T2.episodios.add(serie1T2E4);
-
-        Episodio serie1T2E5 = new Episodio();
-        serie1T2E5.nombre = "The One with Five Steaks and an Eggplant";
-        serie1T2E5.numero = 5;
-        serie1T2.episodios.add(serie1T2E5);
-
+        episodioReusandoVariable = new Episodio();
+        episodioReusandoVariable.nombre = "The One Where Heckles Dies";
+        episodioReusandoVariable.numero = 3;
+        episodioReusandoVariable.descripcion="Descripcion del episodio 3 temp 2 FRIENDS";
+        temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
     }
 
     public void inicializarTheOffice(){
