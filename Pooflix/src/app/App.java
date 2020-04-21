@@ -28,10 +28,10 @@ public class App {
 
        Temporada temporadaElegida = office.getTemporada(1);
        //Episodio episodioElegido = temporadaElegida.getEpisodio(3);
-      // episodioElegido.reproducir();
+       //episodioElegido.reproducir();
 
-       Webisode elMejorWebisodio = temporadaElegida.getWebisode(1);
-       elMejorWebisodio.reproducir();
+       Episodio elMejorWebsodio = temporadaElegida.getEpisodio(4);
+       elMejorWebsodio.reproducir();
 
        
 
