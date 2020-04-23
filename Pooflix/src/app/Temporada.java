@@ -13,7 +13,7 @@ public class Temporada {
         //devolver ese episodio
 
         for (Episodio episo : this.episodios) {
-            if(episo.numero == nro){
+            if(episo.getNumero() == nro){
                 
                 return episo;
             }

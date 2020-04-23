@@ -16,12 +16,29 @@ public class Episodio {
 
 
 
-    public int numero;
+    private int numero;
     public String nombre; 
     public int duracionEnMinutos; 
-    public String descripcion; 
+    private String descripcion; 
+
+    //GETTER /Setter->Get -> devolver el valor de un atributo. El Set va a ponerle.
+    public int getNumero(){
+        return this.numero;
+    }
+    //Setter
+    //siempre tipo void
+    //sirve para poner el valor
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
 
 
+    public String getDescripcion(String descripcion){
+        return this.descripcion;
+    }
+    public void setDescripcion(String descripcion){
+        this.descripcion = descripcion; 
+    }
      
    
 
