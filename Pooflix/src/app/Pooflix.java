@@ -78,25 +78,27 @@ public class Pooflix {
         temporadaReusandoVariable.numero = 1;
         serie1.temporadas.add(temporadaReusandoVariable);
 
-        Episodio episodioReusandoVariable = new Episodio();
-        episodioReusandoVariable.nombre = "The pilot";
-        episodioReusandoVariable.numero = 1;
+
+        Episodio episodioReusandoVariable = new Episodio (1, "The pilot",25);
+        
+        //episodioReusandoVariable.nombre = "The pilot";
+        //episodioReusandoVariable.numero = 1;
         episodioReusandoVariable.descripcion = "Rachel Green entra a Central Perk usando un vestido de novia. Rachel les explica que dejó a su prometido en el altar.";
-        episodioReusandoVariable.duracionEnMinutos = 25;
+        //episodioReusandoVariable.duracionEnMinutos = 25;
         temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
         
-        episodioReusandoVariable = new Episodio();        
-        episodioReusandoVariable.nombre = "The One with the Sonogram at the End";
-        episodioReusandoVariable.numero = 2;
+        episodioReusandoVariable = new Episodio(2,"The One with the Sonogram at the End",20);        
+        //episodioReusandoVariable.nombre = "The One with the Sonogram at the End";
+        //episodioReusandoVariable.numero = 2;
         episodioReusandoVariable.descripcion = "Ross recibe la noticia de su exesposa Carol de que será padre del niño que espera.";
-        episodioReusandoVariable.duracionEnMinutos = 20;
+       //episodioReusandoVariable.duracionEnMinutos = 20;
         temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
-        episodioReusandoVariable = new Episodio();
-        episodioReusandoVariable.nombre = "The One with the Thumb";
+        episodioReusandoVariable = new Episodio(3,"The One with the Thumb",22);
+       // episodioReusandoVariable.nombre = "The One with the Thumb";
         episodioReusandoVariable.descripcion = "Lizzy buys a soda for Phoebe, who, upon opening the can, discovers a severed thumb floating in the soda. The soda company gives Phoebe $7,000.";
-        episodioReusandoVariable.duracionEnMinutos = 22;
-        episodioReusandoVariable.numero = 3;
+        //episodioReusandoVariable.duracionEnMinutos = 22;
+        //episodioReusandoVariable.numero = 3;
         temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
         //
@@ -106,29 +108,30 @@ public class Pooflix {
         temporadaReusandoVariable.numero = 2;         
         serie1.temporadas.add( temporadaReusandoVariable);
 
-        episodioReusandoVariable = new Episodio();
-        episodioReusandoVariable.nombre = "The One with Ross's New Girlfriend";
-        episodioReusandoVariable.numero = 1;
+        episodioReusandoVariable = new Episodio(1,"The One with Ross's New Girlfriend",30);
+        //episodioReusandoVariable.nombre = "The One with Ross's New Girlfriend";
+        //episodioReusandoVariable.numero = 1;
         episodioReusandoVariable.descripcion = "Rachel sees Ross arrive with his new girlfriend, paleontologist and former graduate school classmate Julie.";
-        episodioReusandoVariable.duracionEnMinutos = 30;
+       // episodioReusandoVariable.duracionEnMinutos = 30;
         temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
-        episodioReusandoVariable = new Episodio();
-        episodioReusandoVariable.nombre = "The One with the Breast Milk";
+        episodioReusandoVariable = new Episodio(2,"The One with the Breast Milk", 25);
+        //episodioReusandoVariable.nombre = "The One with the Breast Milk";
         episodioReusandoVariable.descripcion = "Descripcion del episodio 2 temporada 2 FRIENDS";
-        episodioReusandoVariable.duracionEnMinutos = 25;
-        episodioReusandoVariable.numero = 2;
+        //episodioReusandoVariable.duracionEnMinutos = 25;
+        //episodioReusandoVariable.numero = 2;
         temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
 
 
-        episodioReusandoVariable = new Episodio();
-        episodioReusandoVariable.nombre = "The One Where Heckles Dies";
-        episodioReusandoVariable.numero = 3;
+        episodioReusandoVariable = new Episodio(3,"The One Where Heckles Dies",23);
+       // episodioReusandoVariable.nombre = "The One Where Heckles Dies";
+       // episodioReusandoVariable.numero = 3;
         episodioReusandoVariable.descripcion="Descripcion del episodio 3 temp 2 FRIENDS";
+        //episodioReusandoVariable.duracionEnMinutos=23;
         temporadaReusandoVariable.episodios.add(episodioReusandoVariable);
     }
 
-    public void inicializarTheOffice(){
+   public void inicializarTheOffice(){
 
         // GENEROS     
         Genero mockumentary = new Genero();
@@ -170,34 +173,34 @@ public class Pooflix {
         temporadaTheOffice.numero = 1;
         serie2.temporadas.add(temporadaTheOffice);
 
-        Episodio episodioTheOffice = new Episodio();
-        episodioTheOffice.nombre = "Pilot";
-        episodioTheOffice.numero = 1;
+        Episodio episodioTheOffice = new Episodio(1,"Pilot",22);
+       // episodioTheOffice.nombre = "Pilot";
+        //episodioTheOffice.numero = 1;
         episodioTheOffice.descripcion = "Michael Scott, the regional manager at the Scranton branch of Dunder Mifflin, a distribution company dealing in paper products that is currently under threat of facing downsizing.";
-        episodioTheOffice.duracionEnMinutos = 22;
+        //episodioTheOffice.duracionEnMinutos = 22;
         temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        episodioTheOffice = new Episodio();
-        episodioTheOffice.nombre = "Diversity Day";
+        episodioTheOffice = new Episodio(2, "Diversity Day" , 26);
+       // episodioTheOffice.nombre = "Diversity Day";
         episodioTheOffice.descripcion = "The staff to undergo a racial diversity seminar.";
-        episodioTheOffice.duracionEnMinutos = 26;
-        episodioTheOffice.numero = 2;
+       // episodioTheOffice.duracionEnMinutos = 26;
+      //  episodioTheOffice.numero = 2;
         temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        episodioTheOffice = new Episodio();
-        episodioTheOffice.nombre = "Health Care";
+        episodioTheOffice = new Episodio(3,"Health Care",24);
+       // episodioTheOffice.nombre = "Health Care";
         episodioTheOffice.descripcion = "Jim and Pam organize the Games of the First Dunder Mifflin Olympiad.";
-        episodioTheOffice.duracionEnMinutos = 24;
-        episodioTheOffice.numero = 3;
+        //episodioTheOffice.duracionEnMinutos = 24;
+        //episodioTheOffice.numero = 3;
         temporadaTheOffice.episodios.add(episodioTheOffice);
 
         //AGREGO EL WEBISODE
-        Webisode web1  = new Webisode();
-        web1.numero=4;
-        web1.nombre="The Mentor Webisode";
-        web1.duracionEnMinutos = 8;
+        Webisode web1 = new Webisode(4,"The Mentor Webisode",8,"https://www.youtube.com/watch?v=mxHtJfplt1U");
+        //web1.numero=4;
+        //web1.nombre="The Mentor Webisode";
+        //web1.duracionEnMinutos = 8;
         web1.descripcion="Angela becomes Erin's mentor in this EXCLUSIVE Webisode";
-        web1.url="https://www.youtube.com/watch?v=mxHtJfplt1U";
+       // web1.url="https://www.youtube.com/watch?v=mxHtJfplt1U";
        temporadaTheOffice.episodios.add(web1);
         
         
@@ -208,25 +211,27 @@ public class Pooflix {
         temporadaTheOffice.numero = 2;
         serie2.temporadas.add(temporadaTheOffice);
 
-        episodioTheOffice = new Episodio();
-        episodioTheOffice.nombre = "The Dundies";
+        episodioTheOffice = new Episodio(1,"The Dundies",25);
+      //  episodioTheOffice.nombre = "The Dundies";
         episodioTheOffice.descripcion = "Se entregan los premios Dundies";
-        episodioTheOffice.duracionEnMinutos = 25;
-        episodioTheOffice.numero = 1;
+       // episodioTheOffice.duracionEnMinutos = 25;
+       // episodioTheOffice.numero = 1;
         temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        episodioTheOffice = new Episodio();
-        episodioTheOffice.nombre = "Sexual Harassment";
-        episodioTheOffice.numero = 2;
+        episodioTheOffice = new Episodio(2, "Sexual Harassment",25);
+       // episodioTheOffice.nombre = "Sexual Harassment";
+        //episodioTheOffice.numero = 2;
         episodioTheOffice.descripcion = "Todd Packer  offends the staff with crude gossip about an upper management scandal.";
-        episodioTheOffice.duracionEnMinutos = 25;
+       // episodioTheOffice.duracionEnMinutos = 25;
         temporadaTheOffice.episodios.add(episodioTheOffice);
 
-        episodioTheOffice = new Episodio();
-        episodioTheOffice.nombre = "Office Olympics";
-        episodioTheOffice.numero = 3;
+        episodioTheOffice = new Episodio(3,"Office Olympics",25);
+        //episodioTheOffice.nombre = "Office Olympics";
+        //episodioTheOffice.numero = 3;
         episodioTheOffice.descripcion="Descripcion episodio 3 temp 2 THE OFFICE";
+        //episodioTheOffice.duracionEnMinutos = 25;
         temporadaTheOffice.episodios.add(episodioTheOffice);
     }    
+
 
 }
