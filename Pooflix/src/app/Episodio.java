@@ -15,16 +15,38 @@ public class Episodio {
     }
 
 
-
+    
     private int numero;
-    public String nombre; 
-    public int duracionEnMinutos; 
+    /**
+     * @return the numero
+     */
+    public int getNumero() {
+        return numero;
+    }
+    private String nombre; 
+    private int duracionEnMinutos; 
     private String descripcion; 
 
     //GETTER /Setter->Get -> devolver el valor de un atributo. El Set va a ponerle.
-    public int getNumero(){
-        return this.numero;
+    public void setDuracionEnMinutos(int duracionEnMinutos){
+        this.duracionEnMinutos = duracionEnMinutos;
     }
+
+    public int getDuracionEnMinutos(){
+        return this.duracionEnMinutos;
+    }
+    
+    public String getNombre(){
+         return this.nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+
+    /*public int getNumero(){
+        return this.numero;
+    }*/
     //Setter
     //siempre tipo void
     //sirve para poner el valor
@@ -45,6 +67,7 @@ public class Episodio {
     public void reproducir(){
         System.out.println("Reproduciendo episodio " + this.numero + " " + this.nombre);
     }
+
 
 }
 

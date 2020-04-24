@@ -15,12 +15,20 @@ public class Webisode extends Episodio{
     //nombre heredado de EPISODIO 
     //int duracionEnMinutos heredado de EPISODIO 
     //String descripcion heredado de EPISODIO 
-    public String url; 
+    private String url; 
+    public void setUrl(String url){
+        this.url =url;
+    }
+    
+    public String getUrl(){
+        return this.url;
+    }
+
 
     @Override //anotacion que indica que el metodo se sobre - escribe(redifinicion)
     public void reproducir() {
 
-        System.out.println("Reproduciendo websodio ... " + "Nombre: " + this.nombre + "  La url es : " + this.url);
+        System.out.println("Reproduciendo websodio ... " + "Nombre: " + this.getNombre() + "  La url es : " + this.url);
 
     }
 
