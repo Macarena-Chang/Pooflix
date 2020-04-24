@@ -37,6 +37,7 @@ public class Webisode extends Episodio {
     @Override // anotacion que indica que el metodo se sobre - escribe(redifinicion)
     public void reproducir() {
 
+        super.reproducir();
         System.out.println("Reproduciendo websodio ... " + "Nombre: " + this.getNombre() + "  La url es : " + this.url);
 
     }

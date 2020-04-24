@@ -5,7 +5,7 @@ import java.util.List;
 
 import jdk.jfr.Description;
 
-public class Contenido {
+public abstract class  Contenido {
     /***********
      * ATRIBUTOS
      ***********/

@@ -13,8 +13,10 @@ public class Serie extends Contenido {
         this.setCalificacion(calificacion);
         this.setGenero(genero);
         this.setClasificacion(clasificacion);
-        this.setAnio(anio);
+        this.setAnio(anio);                
     }
+
+
 
     /***********
      * ATRIBUTOS
@@ -31,7 +33,7 @@ public class Serie extends Contenido {
     public void setTemporadas(List<Temporada> temporadas) {
         this.temporadas = temporadas;
     }
-    
+
 
     /***************
      **** METODOS****
@@ -52,5 +54,7 @@ public class Serie extends Contenido {
 
         return null;
     }
+
+   
 
 }

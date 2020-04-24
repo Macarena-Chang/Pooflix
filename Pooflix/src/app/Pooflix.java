@@ -83,19 +83,19 @@ public class Pooflix {
 
         // Serie 1 Friends CREANDO ACTORES Y SUMANDOLOS A LISTA ELENCO
         Actor actorReusandoVariable = new Actor("Courteney Cox",51);
-        serie1.getElenco().add(actorReusandoVariable);
+        serie1.getElenco().add(actorReusandoVariable);      
 
         actorReusandoVariable = new Actor("Jennifer Aniston",51);
         serie1.getElenco().add(actorReusandoVariable);
 
         actorReusandoVariable = new Actor("Matthew Perry",50);
-        serie1.getElenco().add(actorReusandoVariable);
+        serie1.getElenco().add(actorReusandoVariable);      
 
         actorReusandoVariable = new Actor( "Matt LeBlanc",52);
-        serie1.getElenco().add(actorReusandoVariable);
+        serie1.getElenco().add(actorReusandoVariable);   
 
         actorReusandoVariable = new Actor("Lisa Kudrow",56);
-        serie1.getElenco().add(actorReusandoVariable);
+        serie1.getElenco().add(actorReusandoVariable);   
 
 
 
