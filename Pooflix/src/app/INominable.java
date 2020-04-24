@@ -7,13 +7,14 @@ public interface INominable {
      **** METODOS****
      ***************/
 
-     //Las interfaces No tienen BODY
-     
+     //Las interfaces No tienen BODY     
 
     boolean ganoPreviamente();
 
-    void reprodducirTrailerNominacion();
+    void reproducirTrailerNominacion();
 
     void sacarSelfie(List<Actor> otrosActor);
+
+    boolean estaNominada();
 
 }

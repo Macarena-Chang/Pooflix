@@ -59,14 +59,17 @@ public class Pooflix {
     public void inicializarTheShining(){
         Director kubrick = new Director("Stanley Kubrick",70);
         Pelicula theShining = new Pelicula("The Shining",10.0,146,1980,kubrick);
+        Actor actorPeli = new Actor("Jack",60);
+        theShining.getElenco().add(actorPeli);        
         this.peliculas.add(theShining);
+        
 
     }
 
 
     /**
      * INICIALIZA SERIE FRIENDS
-     * SE PODRIA PONER TODO EN inicializarCatalogo pero lo hacemos aparte para mantener orden.
+     * SE PODRIA PONER  EN inicializarCatalogo pero lo hacemos aparte para mantener orden.
      * */
     public void inicializarFriends() {
 
@@ -147,7 +150,7 @@ public class Pooflix {
   
     /**
      * INICIALIZA SERIE THE OFFICE
-     * SE PODRIA PONER TODO EN inicializarCatalogo pero lo hacemos aparte para mantener orden.
+     * SE PODRIA PONER en inicializarCatalogo pero lo hacemos aparte para mantener orden.
      * */
     public void inicializarTheOffice(){
 
@@ -220,6 +223,31 @@ public class Pooflix {
         temporadaTheOffice.getEpisodios().add(episodioTheOffice);
     }
 
+    public void inicializarListaNominados() {
+
+        for (Pelicula peli : this.peliculas) {
+            this.nomidados.add(peli);
+            for (Actor actor : peli.getElenco())
+                this.nomidados.add(actor);
+
+        }
+        for (Serie serie : this.series) {
+            for (Actor actor : serie.getElenco())
+                this.nomidados.add(actor);
+
+        }
+    }
+
+    public void reproducirTrailersDeNominacion() {
+        for (INominable nominado : nomidados) {
+            
+            nominado.reproducirTrailerNominacion();
+        }
+    }
+    //Va a guardar todos los objetos que implementen la interface INominable
+   
+
+    public List<INominable> nomidados = new ArrayList<>();
 
 
 
