@@ -14,8 +14,7 @@ public class Pelicula extends Contenido {
         this.setAnio(anio);
         this.setDirector(director);
 
-    }
-  
+    }  
 
 
     /***********
@@ -23,6 +22,7 @@ public class Pelicula extends Contenido {
      ***********/
     private Director director;
     private int duracionEnMinutos;
+    
 
     /******************
      * GETTERS Y SETTERS

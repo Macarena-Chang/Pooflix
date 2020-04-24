@@ -10,11 +10,13 @@ public class Genero {
         this.descripcion = descripcion;
     }
 
+
     /***********
      * ATRIBUTOS
      ***********/
     private String nombre;
     private String descripcion;
+
 
      /******************
      * GETTERS Y SETTERS
@@ -34,9 +36,6 @@ public class Genero {
     public String getDescripcion(){
         return this.descripcion;
     }
-
-
-
    
     
 }

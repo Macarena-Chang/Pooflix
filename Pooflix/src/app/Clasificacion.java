@@ -1,16 +1,26 @@
 package app;
 
 public class Clasificacion {
-    private String tipo; 
-    private int edadMin; 
+    /***********
+     * ATRIBUTOS
+     ***********/
+    private String tipo;
+    private int edadMin;
     private String descripcion;
 
-    
-    public Clasificacion(String tipo, int edadMin, String descripcion){
-        this.tipo=tipo;
-        this.edadMin=edadMin;
+    /***********
+     * Constructor
+     ***********/
+
+    public Clasificacion(String tipo, int edadMin, String descripcion) {
+        this.tipo = tipo;
+        this.edadMin = edadMin;
         this.descripcion = descripcion;
     }
+
+    /******************
+     * GETTERS Y SETTERS
+     *******************/
 
     public String getTipo() {
         return tipo;
@@ -35,7 +45,5 @@ public class Clasificacion {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
-
 
 }

@@ -5,12 +5,15 @@ import java.util.List;
 
 public class Serie extends Contenido {
 
+    /***********
+     * Constructor
+     ***********/
     public Serie(String nombre, Double calificacion, Genero genero, Clasificacion clasificacion, int anio) {
         this.setNombre(nombre);
         this.setCalificacion(calificacion);
         this.setGenero(genero);
         this.setClasificacion(clasificacion);
-        this.setAnio(anio);        
+        this.setAnio(anio);
     }
 
     /***********
@@ -18,8 +21,6 @@ public class Serie extends Contenido {
      ***********/
     private List<Temporada> temporadas = new ArrayList<>();
 
-    
-    
     /******************
      * GETTERS Y SETTERS
      *******************/
@@ -30,17 +31,17 @@ public class Serie extends Contenido {
     public void setTemporadas(List<Temporada> temporadas) {
         this.temporadas = temporadas;
     }
+    
 
-
+    /***************
+     **** METODOS****
+     ***************/
     /**
-     * METODO
-     * 
+     * Recorre cada temporada, si el numero de temporada coincide con nro, devuelve esa temporada
+     * @param nro
+     * @return objeto temporada que coincida con numero ingresado
      */
     public Temporada getTemporada(int nro) {
-        // recorrer cada temporada
-        // si el nro de temporada del ciclo es igual a "nro"
-        // devolver esa temporada
-
         for (Temporada tempo : this.temporadas) {
             if (tempo.getNumero() == nro) {
 

@@ -9,6 +9,7 @@ public class Episodio {
      * parametros: losparametros pueden tener cualquier orden y nombre
      * *********************************************
      */
+
     public Episodio(int numero, String nombre, int duracionEnMinutos) {
         this.numero = numero;
         this.nombre = nombre;
@@ -18,10 +19,12 @@ public class Episodio {
     /***********
      * ATRIBUTOS
      ***********/
+
     private int numero;
     private String nombre;
     private int duracionEnMinutos;
     private String descripcion;
+    
 
     /*******************
      * GETTERS Y SETTERS
@@ -63,7 +66,7 @@ public class Episodio {
         this.descripcion = descripcion;
     }
 
-    
+
 
     /**
      * METODO PARA HACER EL PRINT
