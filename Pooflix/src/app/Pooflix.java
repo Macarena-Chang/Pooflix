@@ -11,6 +11,28 @@ public class Pooflix {
     private List<Serie> series = new ArrayList<>();
 
 
+
+    /******************
+     * GETTERS Y SETTERS
+     *******************/
+
+    public List<Pelicula> getPeliculas() {
+        return peliculas;
+    }
+
+    public void setPeliculas(List<Pelicula> peliculas) {
+        this.peliculas = peliculas;
+    }
+
+    public List<Serie> getSeries() {
+        return series;
+    }
+
+    public void setSeries(List<Serie> series) {
+        this.series = series;
+    }
+
+
     /**
      * Busca serie s en lista series y si hay coincidencia devuelve objeto tipo serie
      * @param titulo
@@ -196,7 +218,9 @@ public class Pooflix {
         episodioTheOffice = new Episodio(3,"Office Olympics",25);
         episodioTheOffice.setDescripcion( "Descripcion episodio 3 temp 2 THE OFFICE");
         temporadaTheOffice.getEpisodios().add(episodioTheOffice);
-    }    
+    }
+
+
 
 
 }
