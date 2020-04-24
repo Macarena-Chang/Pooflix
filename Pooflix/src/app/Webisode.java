@@ -16,6 +16,7 @@ public class Webisode extends Episodio{
     //int duracionEnMinutos heredado de EPISODIO 
     //String descripcion heredado de EPISODIO 
     private String url; 
+    
     public void setUrl(String url){
         this.url =url;
     }

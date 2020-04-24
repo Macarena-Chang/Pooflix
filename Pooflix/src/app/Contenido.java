@@ -12,11 +12,9 @@ public class Contenido {
     private Genero genero;
     private Clasificacion clasificacion;
     private int anio;
+    private List <Actor> elenco = new ArrayList<>(); 
 
-   
-
-
-     List <Actor> elenco = new ArrayList<>(); 
+    
 
     public void setNombre(String nombre){
         this.nombre = nombre;
@@ -64,6 +62,14 @@ public class Contenido {
 
     public Clasificacion getClasificacion(){
         return this.clasificacion;
+    }
+
+    public List<Actor> getElenco() {
+        return elenco;
+    }
+
+    public void setElenco(List<Actor> elenco) {
+        this.elenco = elenco;
     }
 
 }

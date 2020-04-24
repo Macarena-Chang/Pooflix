@@ -21,18 +21,18 @@ public class App {
          * 
          * Episodio elTop; elTop = laMejorTemporada.getEpisodio(1);
          * 
-         * elTop.reproducir();
+         * elTop.reproducir(); 
          */
 
         Serie office = miPooflix.buscarSerie("The Office");
         miPooflix.buscarSerie("The Office");
 
         Temporada temporadaElegida = office.getTemporada(1);
-        Episodio episodioElegido = temporadaElegida.getEpisodio(3);
-         episodioElegido.reproducir();
+        //Episodio episodioElegido = temporadaElegida.getEpisodio(3);
+        //episodioElegido.reproducir();
 
-        Episodio elMejorWebsodio = temporadaElegida.getEpisodio(4);
-        elMejorWebsodio.reproducir();
+        //Episodio elMejorWebsodio = temporadaElegida.getEpisodio(2);
+       // elMejorWebsodio.reproducir();
 
         System.out.println("Empezando otra cosa");
 
@@ -70,7 +70,7 @@ public class App {
 
         lala = 0;
        
-        Webisode webi = (Webisode) epiDemo;
+        
     }
 
 }
