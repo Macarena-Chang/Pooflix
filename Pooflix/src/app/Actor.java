@@ -30,7 +30,7 @@ public class Actor extends Persona implements INominable {
     }
 
     public void decirDiscurso() {
-        System.out.println("el actor dice discurso");
+        System.out.println("el actor/actriz " + this.getNombre() + "  dice discurso");
     }
 
     @Override

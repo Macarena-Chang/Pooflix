@@ -2,6 +2,8 @@ package app;
 
 import java.util.Scanner;
 
+
+
 public class App {
     public static Scanner Teclado = new Scanner(System.in);
 
@@ -71,6 +73,34 @@ public class App {
         miPooflix.inicializarListaNominados();
 
         miPooflix.reproducirTrailersDeNominacion();
+
+
+
+        //Ganador da discurso si es un ACTOR 
+        INominable ganador;
+        ganador = miPooflix.nomidados.get(4);
+
+        if(ganador instanceof Actor){
+            
+            Actor actorDiceDiscurso = (Actor) ganador;
+            actorDiceDiscurso.decirDiscurso();
+        }else{
+            System.out.print("No es un actor");
+        }
+
+
+
+
+
+
+        
+
+        int lala;
+        lala=2;
+ 
+        
+        
+
 
         
     }
