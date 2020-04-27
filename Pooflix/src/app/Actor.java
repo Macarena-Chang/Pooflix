@@ -35,8 +35,8 @@ public class Actor extends Persona implements INominable {
 
     @Override
     public boolean estaNominada() {
-        // TODO Auto-generated method stub
-        return false;
+
+       return false;
     }
      
 

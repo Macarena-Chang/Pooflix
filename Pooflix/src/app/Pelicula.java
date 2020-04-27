@@ -67,6 +67,7 @@ public class Pelicula extends Contenido implements INominable {
     }
 
     public boolean estaNominada(){
+        
         return true;
     }
 }

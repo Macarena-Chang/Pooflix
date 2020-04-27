@@ -9,7 +9,8 @@ public class Pooflix {
      ***********/
     private List<Pelicula> peliculas = new ArrayList<>();
     private List<Serie> series = new ArrayList<>();
-
+     //Va a guardar todos los objetos que implementen la interface INominable
+     List<INominable> nominados = new ArrayList<>();
 
 
     /******************
@@ -31,6 +32,16 @@ public class Pooflix {
     public void setSeries(List<Serie> series) {
         this.series = series;
     }
+
+    public List<INominable> getNominados() {
+        return nominados;
+    }
+
+    public void setNominados(List<INominable> nominados) {
+        this.nominados = nominados;
+    }
+
+
 
 
     /**
@@ -226,28 +237,25 @@ public class Pooflix {
     public void inicializarListaNominados() {
 
         for (Pelicula peli : this.peliculas) {
-            this.nomidados.add(peli);
+            this.nominados.add(peli);
             for (Actor actor : peli.getElenco())
-                this.nomidados.add(actor);
+                this.nominados.add(actor);
 
         }
         for (Serie serie : this.series) {
             for (Actor actor : serie.getElenco())
-                this.nomidados.add(actor);
+                this.nominados.add(actor);
 
         }
     }
-
+       
     public void reproducirTrailersDeNominacion() {
-        for (INominable nominado : nomidados) {
-            
+        for (INominable nominado : nominados) {
+
             nominado.reproducirTrailerNominacion();
         }
     }
-    //Va a guardar todos los objetos que implementen la interface INominable
-   
 
-    public List<INominable> nomidados = new ArrayList<>();
 
 
 
