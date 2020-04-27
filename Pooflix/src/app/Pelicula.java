@@ -67,7 +67,7 @@ public class Pelicula extends Contenido implements INominable {
     }
 
     public boolean estaNominada(){
-        
+        System.out.println("La pelicula " + this.getNombre() + " está nominada");
         return true;
     }
 }

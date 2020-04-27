@@ -10,7 +10,7 @@ public class Pooflix {
     private List<Pelicula> peliculas = new ArrayList<>();
     private List<Serie> series = new ArrayList<>();
      //Va a guardar todos los objetos que implementen la interface INominable
-     List<INominable> nominados = new ArrayList<>();
+    private List<INominable> nominados = new ArrayList<>();
 
 
     /******************

@@ -32,7 +32,7 @@ public class App {
         // CODIGO PARA BUSCAR Y REPRODUCIR EN SERIE THE OFFICE
         Serie office = miPooflix.buscarSerie("The Office");
         miPooflix.buscarSerie("The Office");
-        
+
 
         Temporada temporadaElegida = office.getTemporada(1);
         Episodio episodioElegido = temporadaElegida.getEpisodio(3);
@@ -74,22 +74,31 @@ public class App {
         miPooflix.inicializarListaNominados();
 
         miPooflix.reproducirTrailersDeNominacion();
-
+       
+        
+        
         //INominable estaNominado;
         //estaNominado = miPooflix.nominados.get();
+        //El primero es una pelicula
+        //el segundo es una actor
+        miPooflix.getNominados().get(0).estaNominada();
+        miPooflix.getNominados().get(4).estaNominada();
 
 
+        
         //Ganador da discurso si es un ACTOR 
         INominable ganador;
-        ganador = miPooflix.nominados.get(4);
+        ganador = miPooflix.getNominados().get(4);
 
         if(ganador instanceof Actor){
             
             Actor actorDiceDiscurso = (Actor) ganador;
             actorDiceDiscurso.decirDiscurso();
         }else{
-            System.out.print("No es un actor");
+            System.out.print("No es un actor por lo tanto no da un discurso.");
         }
+
+
 
 
 

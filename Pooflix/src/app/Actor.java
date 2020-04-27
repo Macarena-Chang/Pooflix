@@ -22,7 +22,7 @@ public class Actor extends Persona implements INominable {
 
     public void reproducirTrailerNominacion() {
         // CODIGO
-        System.out.println("Reproduciendo trailer de escenas " + this.getNombre());
+        System.out.println("Reproduciendo trailer de escenas de" + this.getNombre());
     }
 
     public void sacarSelfie(List<Actor> otrosActor) {
@@ -30,14 +30,15 @@ public class Actor extends Persona implements INominable {
     }
 
     public void decirDiscurso() {
-        System.out.println("el actor/actriz " + this.getNombre() + "  dice discurso");
+        System.out.println("el actor/actriz " + this.getNombre() + " Ha ganado y  dice discurso");
     }
 
     @Override
     public boolean estaNominada() {
-
-       return false;
+        INominable getNominados;
+        System.out.println(this.getNombre()+ " está nominado");
+        return true;
     }
-     
 
 }
+
