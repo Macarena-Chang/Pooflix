@@ -83,4 +83,8 @@ public abstract class  Contenido {
         this.elenco = elenco;
     }
 
+    public void reproducir(){
+        
+    }
+
 }
