@@ -14,6 +14,9 @@ public class Pooflix {
     private List<Serie> series = new ArrayList<>();
     // Va a guardar todos los objetos que implementen la interface INominable
     private List<INominable> nominados = new ArrayList<>();
+    public List <Contenido> seriesYPelis = new ArrayList<>();
+
+
 
 
     /******************
@@ -108,6 +111,7 @@ public class Pooflix {
         Actor actorPeli = new Actor("Jack", 60);
         theShining.getElenco().add(actorPeli);
         this.peliculas.add(theShining);
+        this.seriesYPelis.addAll(peliculas);
 
     }
 
@@ -128,6 +132,7 @@ public class Pooflix {
         serie1.setDescripcion(
                 "Rachel Green, a sheltered but friendly woman, flees her wedding day and wealthy yet unfulfilling life, and finds childhood friend Monica Geller...");
         this.series.add(serie1);
+        this.seriesYPelis.addAll(series);
 
         // Serie 1 Friends CREANDO ACTORES Y SUMANDOLOS A LISTA ELENCO
         Actor actorReusandoVariable = new Actor("Courteney Cox", 51);
@@ -209,6 +214,7 @@ public class Pooflix {
         serie2.setDescripcion(
                 "The Office is an American mockumentary sitcom television series that depicts the everyday lives of office employees in the Scranton, Pennsylvania");
         this.series.add(serie2);
+        this.seriesYPelis.addAll(series);
 
         // Serie 2 THE OFFICE CREANDO ACTORES Y SUMANDOLOS A LISTA ELENCO
         Actor actorTheOffice = new Actor("Steve Carell", 57);

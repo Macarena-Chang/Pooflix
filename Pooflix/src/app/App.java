@@ -13,6 +13,8 @@ public class App {
 
         System.out.println("Iniciando Catalogo");
 
+        
+
         miPooflix.inicializarCatalogo();
 
         // CODIGO PARA BUSCAR Y REPRODUCIR EN SERIE FRIENDS
