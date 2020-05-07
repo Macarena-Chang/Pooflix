@@ -10,6 +10,7 @@ public class Actor extends Persona implements INominable {
     /***********
      * Constructor
      ***********/
+    ///////////
     public Actor(String nombre, int edad) {
         this.setNombre(nombre);
         this.setEdad(edad);
